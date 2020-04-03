@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container flex header-container">
+            <div class="title">
+                <h2 class="mb-4">
+                    Social Media Dashboard
+                </h2>
+                <p>Total Followers: 23,004</p>
+            </div>
+            <div class="flex theme-switch-wrapper">
+                <p>Dark Mode</p>
+                <label for="theme-switch" class="switch">
+                    <input id="theme-switch" type="checkbox">
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container grid">
+            <div class="box box-lg facebook">
+                <p class="flex social"><img src="./images/icon-facebook.svg" alt="facebook" />@nathanf</p>
+                <div class="flex stats">
+                    <h1>1987</h1>
+                    <h3>Followers</h3>
+                </div>
+                <p class="up">12 Today</p>
+            </div>
+
+            <div class="box box-lg twitter">
+                <p class="flex social"><img src="./images/icon-twitter.svg" alt="twitter" />@nathanf</p>
+                <div class="flex stats">
+                    <h1>1044</h1>
+                    <h3>Followers</h3>
+                </div>
+                <p class="up">99 Today</p>
+            </div>
+
+            <div class="box box-lg instagram">
+                <p class="flex social"><img src="./images/icon-instagram.svg" alt="instagram" />@realnathanf</p>
+                <div class="flex stats">
+                    <h1>11k</h1>
+                    <h3>Followers</h3>
+                </div>
+                <p class="up">1099 Today</p>
+            </div>
+
+            <div class="box box-lg youtube">
+                <p class="flex social"><img src="./images/icon-youtube.svg" alt="youtube" />Nathan F.</p>
+                <div class="flex stats">
+                    <h1>8239</h1>
+                    <h3>Subscribers</h3>
+                </div>
+                <p class="down">144 Today</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">
+                Overview - Today
+            </h2>
+
+            <div class="grid">
+                <div class="box box-sm">
+                    <p class="flex social">Page Views <img src="./images/icon-facebook.svg" alt="facebook" /></p>
+                    <div class="flex">
+                        <h2>87</h2>
+                        <p class="up">3%</p>
+                    </div>
+                </div>
+                <div class="box box-sm">
+                    <p class="flex social">Likes<img src="./images/icon-facebook.svg" alt="facebook" /></p>
+                    <div class="flex">
+                        <h2>52</h2>
+                        <p class="down">2%</p>
+                    </div>
+                </div>
+                <div class="box box-sm">
+                    <p class="flex social">Likes <img src="./images/icon-instagram.svg" alt="instagram" /></p>
+                    <div class="flex">
+                        <h2>5462</h2>
+                        <p class="up">2257%</p>
+                    </div>
+                </div>
+                <div class="box box-sm">
+                    <p class="flex social">Profile Views <img src="./images/icon-instagram.svg" alt="instagram" />
+                    </p>
+                    <div class="flex">
+                        <h2>52k</h2>
+                        <p class="up">1375%</p>
+                    </div>
+                </div>
+                <div class="box box-sm">
+                    <p class="flex social">Retweets <img src="./images/icon-twitter.svg" alt="twitter" /></p>
+                    <div class="flex">
+                        <h2>117</h2>
+                        <p class="up">303%</p>
+                    </div>
+                </div>
+                <div class="box box-sm">
+                    <p class="flex social">Likes <img src="./images/icon-twitter.svg" alt="twitter" /></p>
+                    <div class="flex">
+                        <h2>507</h2>
+                        <p class="up">553%</p>
+                    </div>
+                </div>
+                <div class="box box-sm">
+                    <p class="flex social">Likes <img src="./images/icon-youtube.svg" alt="youtube" /></p>
+                    <div class="flex">
+                        <h2>107</h2>
+                        <p class="down">19%</p>
+                    </div>
+                </div>
+                <div class="box box-sm">
+                    <p class="flex social">Total Views <img src="./images/icon-youtube.svg" alt="youtube" /></p>
+                    <div class="flex">
+                        <h2>1407</h2>
+                        <p class="down">12%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#">Dani Domínguez</a>.
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
